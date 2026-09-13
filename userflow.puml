@@ -1,0 +1,46 @@
+@startuml flow-template
+skinparam shadowing false
+skinparam ActivityBackgroundColor #EDF2F7
+skinparam ActivityDiamondBackgroundColor #FEFCBF
+
+title Process Name — Flow Diagram
+
+|#E8F0FE|User|
+|#F1F8E9|System|
+
+|User|
+start
+:Submit request;
+
+|System|
+:Validate input;
+
+if (Input valid?) then (yes)
+  :Persist record;
+else (no)
+  #FFCDD2:Return validation error;
+  stop
+endif
+
+fork
+  :Write audit log;
+fork again
+  :Send notification;
+end fork
+
+repeat
+  :Process next item;
+  backward:Fetch more data;
+repeat while (More items?) is (yes) not (no)
+
+switch (Result status?)
+case (Success)
+  :Mark complete;
+case (Retryable)
+  :Schedule retry;
+endswitch
+
+|User|
+:Show confirmation;
+stop
+@enduml
