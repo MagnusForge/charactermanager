@@ -1,0 +1,40 @@
+
+## Character Creation Steps
+- Personal Details
+    - Name
+    - Pronouns
+    - Alignment
+    - Languages (3)
+- Class
+    - Current Level
+    - Hit Die
+    - Saving Throw Proficienies (2)
+    - Skill Proficiencies
+    - Weapon Proficiencies
+    - Tool Proficiencies
+    - Armor Training
+    - Starting Equipment (send to Equipment)
+    - Class Features (opt. choices)
+- Species
+    - Creature Type
+    - Size
+    - Speed
+    - Senses
+    - Species Features (opt. choices)
+- Background
+    - Ability Score Bonus (+1 to 3, OR +2/+1)
+    - Skill Proficiencies (2)
+    - Tool Proficiencies (1)
+    - Origin Feat
+    - Equipment & Gold (send to Equipment)
+- Ability Scores
+    - Fill out Skills
+    - Fill out Saving Throws
+    - Fill out Attack Modifiers
+    - Fill out Spell Modifiers
+    - Determine Hit Points
+- Equipment
+    - Armor (calculate AC)
+    - Weapons (Determine Damage)
+    - Trinket (optional)
+    - Money (GP)
